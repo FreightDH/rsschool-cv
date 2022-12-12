@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 * {
   padding: 0px;
   margin: 0px;
@@ -90,6 +90,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: inherit;
 }
 
+body {
+  background-color: #000;
+}
+
 .wrapper {
   width: 100%;
   min-height: 100%;
@@ -101,40 +105,48 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 1000px;
   width: 100%;
   margin: 0px auto;
   color: #000;
 }
 
-.header {
-  padding: 15px 0px;
-  background-color: orange;
-}
-
 .header-body {
   display: flex;
   font-size: 0px;
-  justify-content: space-between;
-  align-items: center;
+  background-color: #18181D;
+}
+.header-body__column.column__1 {
+  flex: 0 0 300px;
+}
+.header-body__column.column__2 {
+  padding: 50px 0px 0px 0px;
+  flex: 1 1 auto;
 }
 .header-body__icon img {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+
+.header-menu__menu {
+  background-color: #E78818;
+  padding: 10px 0;
+  margin: 0px 0px 20px 0px;
 }
 
 .header-menu-list {
   display: flex;
   font-size: 0px;
+  justify-content: flex-end;
 }
 .header-menu-list__link {
   display: block;
-  margin: 0px 15px;
-  font-size: 16px;
+  margin: 0px 30px 0px 0px;
+  font-weight: 600;
+  font-size: 18px;
   line-height: 22px;
   text-transform: uppercase;
-  color: #000;
+  color: #18181D;
   position: relative;
 }
 .header-menu-list__link span {
@@ -147,14 +159,29 @@ h1, h2, h3, h4, h5, h6 {
   left: 50%;
   bottom: -1px;
   width: 0;
-  height: 1px;
-  background-color: #000;
+  height: 2px;
+  background-color: #18181D;
   transition: all 0.3s ease 0s;
-}
-.header-menu-list__link:hover {
-  color: #000;
 }
 .header-menu-list__link:hover span::after {
   left: 0;
   width: 100%;
+}
+
+.header-body-titles {
+  padding: 20px;
+  background-color: #E78818;
+  color: #18181D;
+  text-transform: uppercase;
+  text-align: right;
+}
+.header-body-titles__title {
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 50px;
+}
+.header-body-titles__subtitle {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 35px;
 }
