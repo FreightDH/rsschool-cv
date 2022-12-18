@@ -4,9 +4,135 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" href="img/icon.JPG" type="image/x-icon">
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+	</style>
 	<title>CV</title>
 </head>
 <body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="header-body">
+					<div class="header-body__column column__1">
+						<a href="https://github.com/FreightDH" class="header-body__icon"><img src="img/02.jpg" alt="icon"></a>
+					</div>
+					<div class="header-body__column column__2">
+						<div class="header-menu__icon">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<nav class="header-menu__menu">
+							<ul class="header-menu-list">
+								<li><a href="#about" class="header-menu-list__link"><span>About me</span></a></li>
+								<li><a href="#contacts" class="header-menu-list__link"><span>Contacts</span></a></li>
+								<li><a href="#skills" class="header-menu-list__link"><span>Skills</span></a></li>
+								<li><a href="#code" class="header-menu-list__link"><span>Code</span></a></li>
+								<li><a href="#projects" class="header-menu-list__link"><span>Projects</span></a></li>
+							</ul>
+						</nav>
+						<div class="header-body-titles">
+							<h1 class="header-body-titles__title">Max Zolotkov</h1>
+							<h2 class="header-body-titles__subtitle">Future front-end developer</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="content">
+			<div class="container">
+				<div class="content-body">
+					<div class="content-body__column column__1">
+						<div class="content-body-item item">
+							<section class="item-contacts contacts" id="contacts">
+								<h2 class="contacts__title">Contacts</h2>
+								<div class="contacts__divider divider"></div>
+								<ul class="contacts-list">
+									<li class="contacts-list__item">Saint-Petersburg, Russia</li>
+									<li class="contacts-list__item">Github: <a href="https://github.com/FreightDH">FreightDH</a></li>
+									<li class="contacts-list__item">Telegram: <a href="https://tele.click/freightdh">@FreightDH</a></li>
+									<li class="contacts-list__item">Discord: <a href="https://discordapp.com/users/689422078822187045/">FreightDH#7246</a></li>
+								</ul>
+							</section>
+							<section class="item-skills skills" id="skills">
+								<h2 class="skills__title">Skills</h2>
+								<div class="skills__divider divider"></div>
+								<ul class="skills-list">
+									<li class="skills-list__html">HTML</li>
+									<li class="skills-list__css">CSS</li>
+									<li class="skills-list__sass">SASS</li>
+									<li class="skills-list__js">JavaScript</li>
+									<li class="skills-list__c">C, C++, C#</li>
+									<li class="skills-list__git">GitHub</li>
+								</ul>
+							</section>
+						</div>
+					</div>
+					<div class="content-body__column column__2">
+						<div class="content-body-item item">
+							<section class="item-about about" id="about">
+								<h2 class="about__title">About me</h2>
+								<div class="about__divider divider"></div>
+								<p class="about__text">I'm currently a second year student at BSTU "Voenmeh", St. Petersburg. I'm studying at the faculty of Software Engineering. My goal is to become an experienced and in-demand programmer. I'm fond of programming and study new things in this field almost all my free time from studying at the university.</p>
+								<q class="about__quote">Study, develop and, remember, live and work in your free time.</q>
+								<div class="about-education education">
+									<h3 class="education__title">Education:</h3>
+									<ul class="education-list">
+										<li class="education-list__item">BSTU "Voenmeh" - Software Engineering</li>
+										<li class="education-list__item">Self-education (Youtube, books etc.)</li>
+										<li class="education-list__item">RS School - JavaScript/Front-End Development (In progress...)</li>
+									</ul>
+								</div>
+								<div class="about-languages languages">
+									<h3 class="languages__title">Languages:</h3>
+									<ul class="languages-list">
+										<li class="languages-list__item">Russian - native</li>
+										<li class="languages-list__item">English - B1 (Intermediate)</li>
+									</ul>
+								</div>
+							</section>
+							<section class="item-code code" id="code">
+								<h2 class="code__title">Code</h2>
+								<div class="code__divider divider"></div>
+								<div class="code__code">
+function narcissistic(value) {
+	value = value.toString();
+	const LENGTH = value.length;
+	let sum = 0, i = 0;
+	while (i !== LENGTH) {
+		sum += Number(value[i++])**LENGTH;
+	}
+	return String(sum) === value;
+}
+								</div>
+							</section>
+							<section class="item-projects projects" id="projects">
+								<h2 class="projects__title">Projects</h2>
+								<div class="projects__divider divider"></div>
+								<p class="projects__text">So far, it's empty here, but the section will be updated very soon...</p>
+							</section>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-body">
+					<div class="footer-body__column column__1"></div>
+					<div class="footer-body__column column__2">
+						<div class="footer-body__divider divider"></div>
+						<p class="footer-body__text">The CV was made as part of the course:</p>
+						<a href="https://rs.school/js/" class="footer-body__link"><img src="img/logo.svg" alt="course logo"></a>
+				</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>
