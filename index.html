@@ -6,6 +6,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="img/icon.JPG" type="image/x-icon">
 	<link rel="stylesheet" href="css/style.css">
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+	</style>
 	<title>CV</title>
 </head>
 <body>
@@ -14,7 +17,7 @@
 			<div class="container">
 				<div class="header-body">
 					<div class="header-body__column column__1">
-						<a href="#" class="header-body__icon"><img src="img/02.jpg" alt="icon"></a>
+						<a href="https://github.com/FreightDH" class="header-body__icon"><img src="img/02.jpg" alt="icon"></a>
 					</div>
 					<div class="header-body__column column__2">
 						<div class="header-menu__icon">
@@ -91,11 +94,43 @@
 									</ul>
 								</div>
 							</section>
+							<section class="item-code code">
+								<h2 class="code__title">Code</h2>
+								<div class="code__divider divider"></div>
+								<div class="code__code">
+function narcissistic(value) {
+	value = value.toString();
+	const LENGTH = value.length;
+	let sum = 0, i = 0;
+	while (i !== LENGTH) {
+		sum += Number(value[i++])**LENGTH;
+	}
+	return String(sum) === value;
+}
+								</div>
+							</section>
+							<section class="item-projects projects">
+								<h2 class="projects__title">Projects</h2>
+								<div class="projects__divider divider"></div>
+								<p class="projects__text">So far, it's empty here, but the section will be updated very soon...</p>
+							</section>
 						</div>
 					</div>
 				</div>
 			</div>
 		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-body">
+					<div class="footer-body__column column__1"></div>
+					<div class="footer-body__column column__2">
+						<div class="footer-body__divider divider"></div>
+						<p class="footer-body__text">The CV was made as part of the course:</p>
+						<a href="https://rs.school/js/" class="footer-body__link"><img src="img/logo.svg" alt="course logo"></a>
+				</div>
+				</div>
+			</div>
+		</footer>
 	</div>
 </body>
 </html>
