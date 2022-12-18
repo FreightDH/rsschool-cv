@@ -180,6 +180,7 @@ html {
 }
 
 .header-body-titles {
+  margin: 0px 0px 20px 0px;
   padding: 20px;
   background-color: #E78818;
   color: #18181D;
@@ -197,6 +198,13 @@ html {
   line-height: 35px;
 }
 
+.divider {
+  width: 100%;
+  height: 2px;
+  background-color: #E78818;
+  margin: 0px 0px 20px 0px;
+}
+
 .content-body {
   display: flex;
   font-size: 0px;
@@ -206,33 +214,37 @@ html {
   background-color: #18181D;
   padding: 25px 0px 0px 25px;
 }
-
-.education {
-  color: #fff;
-  margin: 0px 0px 20px 0px;
+.content-body__column.column__2 {
+  flex: 1 1 auto;
+  background-color: #fff;
+  padding: 25px 35px 0px 35px;
 }
-.education__title {
+
+.contacts {
+  color: #fff;
+}
+.contacts__title {
   font-size: 28px;
   line-height: 33px;
   font-weight: 600;
   text-transform: uppercase;
 }
-.education__university {
-  max-width: 250px;
-  font-size: 24px;
-  line-height: 29px;
-  text-transform: capitalize;
-}
-.education__faculty {
-  font-size: 22px;
-  line-height: 27px;
-  text-transform: capitalize;
-}
 
-.divider {
-  width: 100%;
-  height: 2px;
-  background-color: #E78818;
+.contacts-list {
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 500;
+}
+.contacts-list li a {
+  color: #E78818;
+}
+.contacts-list li a:hover {
+  text-decoration: underline;
+}
+.contacts-list__item {
+  margin: 0px 0px 5px 0px;
+}
+.contacts-list__item:last-child {
   margin: 0px 0px 20px 0px;
 }
 
@@ -253,28 +265,99 @@ html {
 }
 .skills-list li {
   margin: 0px 0px 15px 0px;
+  padding: 0px 0px 0px 30px;
 }
 .skills-list__html {
-  padding: 0px 0px 0px 40px;
   background: url("../img/icons/01.svg") left no-repeat;
 }
 .skills-list__css {
-  padding: 0px 0px 0px 40px;
   background: url("../img/icons/02.svg") left no-repeat;
 }
 .skills-list__sass {
-  padding: 0px 0px 0px 40px;
   background: url("../img/icons/03.svg") left no-repeat;
 }
 .skills-list__js {
-  padding: 0px 0px 0px 40px;
   background: url("../img/icons/04.svg") left no-repeat;
 }
 .skills-list__c {
-  padding: 0px 0px 0px 40px;
   background: url("../img/icons/05.svg") left no-repeat;
 }
 .skills-list__git {
-  padding: 0px 0px 0px 40px;
   background: url("../img/icons/06.svg") left no-repeat;
+}
+
+.about {
+  color: #18181D;
+}
+.about__title {
+  font-size: 28px;
+  line-height: 33px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: right;
+}
+.about__text {
+  margin: 0px 0px 15px 0px;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 500;
+  text-align: justify;
+}
+.about__quote {
+  display: block;
+  border-left: 5px solid #ccc;
+  background-color: #f9f9f9;
+  padding: 5px 0px 5px 5px;
+  quotes: none;
+  margin: 0px 0px 15px 0px;
+  font-style: italic;
+  font-size: 19px;
+  line-height: 23px;
+  font-weight: 500;
+}
+
+.about-education {
+  margin: 0px 0px 15px 0px;
+}
+
+.education__title {
+  margin: 0px 0px 10px 0px;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.education-list {
+  padding: 0px 0px 0px 15px;
+}
+.education-list__item {
+  margin: 0px 0px 5px 0px;
+  list-style-type: circle;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 500;
+}
+
+.about-languages {
+  margin: 0px 0px 15px 0px;
+}
+
+.languages__title {
+  margin: 0px 0px 10px 0px;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.languages-list {
+  padding: 0px 0px 0px 15px;
+}
+.languages-list__item {
+  margin: 0px 0px 5px 0px;
+  list-style-type: circle;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 500;
 }
